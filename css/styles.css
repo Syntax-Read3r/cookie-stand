@@ -20,11 +20,13 @@
     max-width: 1280px;
     align-items: center;
     justify-content: space-around;  
+    background-color: var(--dark);
 }
 
-.nav_text {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
+.n_items {
+    color: var(--light);
+    background-color: var(--dark);
+    text-decoration: none;
+    padding-right: 20px;
 }
 
