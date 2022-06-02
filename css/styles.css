@@ -1,0 +1,30 @@
+:root {
+    --dark: #9A482F;
+    --primary: #B3773E;
+    --light: #ce9c6b;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo_img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    max-width: 1280px;
+    align-items: center;
+    justify-content: space-around;  
+}
+
+.nav_text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
