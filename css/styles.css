@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
-
+html {
+    height: 100%;
+}
 
 :root {
     --dark: #9A482F;
     --primary: #B3773E;
     --light: #ce9c6b;
     --clr: #222327
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 * {
     margin: 0;
@@ -31,7 +38,6 @@
 .n_items {
     color: var(--light);
     text-decoration: none;
-    padding-right: 20px;
 }
 
 .container ul {
@@ -62,7 +68,7 @@
     position: relative;
     display: block;
     line-height: 75px;
-    font-size: 1.5em;
+    font-size: 2.5em;
     text-align: center;
     transition: 0.5s;
     color: var(--clr);
@@ -85,4 +91,54 @@
 .container ul li:hover a .text {
     transform: translateY(10px);
     opacity: 1;
+}
+/* Nav bar css ends here */
+
+/* NOTE Footer css begins here */
+
+footer {
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+    background-color: var(--dark);
+    min-height: 50px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .s-media-icons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer .s-media-icons li a {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    opacity: 0.5;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: #f00 url(img/wave.png)
 }
