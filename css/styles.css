@@ -100,7 +100,7 @@ footer {
     position: relative;
     margin-top: auto;
     width: 100%;
-    background-color: var(--dark);
+    background-image: linear-gradient(#3586ff 15%,#9A482F);
     min-height: 50px;
     padding: 20px 50px;
     display: flex;
@@ -136,7 +136,7 @@ footer a:hover {
 
 .wave {
     position: absolute;
-    top: -20px;
+    top: -40px;
     left: 0;
     width: 100%;
     height: 40px;
@@ -154,7 +154,7 @@ footer a:hover {
     z-index: 999;
     opacity: 0.5;
     bottom: 10px;
-    animation: animateWave-2 4s linear infinite;
+    animation: animateWave-2 2s linear infinite;
 }
 
 #wave3 {
@@ -165,12 +165,40 @@ footer a:hover {
 }
 
 #wave4 {
-    z-index: 997;
+    z-index: 996;
     opacity: 0.25;
     bottom: 20px;
     animation: animateWave-4 3.5s linear infinite;
 }
 
+.waveFish {
+    background: url(../img/fish.png);
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 40px;
+    background-size: 180px 50px;
+}
+
+#wave5 {
+    z-index: 997.5;
+    opacity: 0.75;
+    bottom: 0;
+    animation: animateFish 4s linear infinite;
+    animation-name: 20s;
+}
+
+@keyframes animateFish {
+0%{
+    background-position-x: -100px;
+} 80% {
+    background-position-x: 200px;
+} 100% {
+    background-position-x: 1500px;
+}
+}
 
 
 @keyframes animateWave {
@@ -193,17 +221,25 @@ footer a:hover {
 
 @keyframes animateWave-3 {
     0% {
-        background-position-x: 500px;
+        background-position-x: 0px;
     }
     100% {
-        background-position-x: 800px;
+        background-position-x: 1000px;
     }
 }
 @keyframes animateWave-4 {
     0% {
-        background-position-x: 320px;
+        background-position-x: 0px;
     }
     100% {
         background-position-x: 1800px;
     }
+}
+/* footer css ends here*/
+/* NOTE: body css starts here*/
+
+body {
+    background-image: url(../img/test-bg4c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
