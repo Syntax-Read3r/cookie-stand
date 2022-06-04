@@ -311,6 +311,7 @@ main::after {
     opacity: 0;
 }
 
+
 .card:hover .card-content {
     transform: translateY(0px);
     opacity: 1;
@@ -338,4 +339,7 @@ main::after {
     border-radius: 20px;
     text-decoration: none;
 
-}
+} 
+
+/* Main css ends here */
+/* NOTE: sales/index css begins here */
