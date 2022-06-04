@@ -37,22 +37,35 @@ class Location {
   changeCusRange(min, max) {
     return (this.customerRange = [min, max]);
   }
+
+  tableHeader() {
+    let x = 0
+    while(x < 1) {
+      let item1 = document.createElement("tr");
+      item1.textContent = `${hour[a]}`;
+      this.list.append(item1)
+      x++
+    }
+  }
   
   render() {
     this.estimatedCustomer_perHour();
     this.cookiesPurchased_oneHour();
     for (let a = 0; a < this.customersEachHour.length; a++) {
-      let item = document.createElement("li");
-      item.textContent = `${hour[a]}: ${this.customersEachHour[a]} cookies`;
+
+      let item = document.createElement("td");
+      item.textContent = `${this.customersEachHour[a]} cookies`;
       this.list.append(item);
       this.totalDailyCookies = this.totalDailyCookies + this.customersEachHour[a];
     }
-    let total = document.createElement("li");
-    total.textContent = `Total: ${this.totalDailyCookies} cookies`;
+    let total = document.createElement("td");
+    total.textContent = `${this.totalDailyCookies} cookies`;
     this.list.append(total);
   }
 }
 
 const seattle = new Location('Seattle', [23,65], 6.3);
-
-console.log(seattle);
+const tokyo = new Location('Tokyo', [3,24],1.2);
+const dubai = new Location('Dubai', [11,38],3.7);
+const paris = new Location('Paris', [20,38],2.3);
+const lima = new Location('Lima', [3,16],4.6)
