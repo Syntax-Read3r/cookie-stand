@@ -40,21 +40,35 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="salePage">
       <h4>Sales Report</h4>
       <table id="dataTable"></table>
+
+   //NOTE: Form
+      <form action="">
+        <fieldset>
+          <legend>Pat's Salmon Changer</legend>
+          <label for="city">City::</label>
+          <input type="text" id="city" name="city"><br><br>
+
+          <label for="minmax">Minimum Cust Range:</label>
+          <input type="text" id="minmax" name="minmax"><br><br>
+
+          <label for="minmax2">Maximum Cust Range:</label>
+          <input type="text" id="minmax2" name="minmax2"><br><br>
+
+          <label for="avgCon">Average Conv-Rate:</label>
+          <input type="text" id="avgCon" name="avgCon"><br><br>
+
+          <button type="submit" id="submit" name="submit">Submit</button>
+
+          
+        </fieldset>
+      </form>
     </main>
 
     <ul id="seattle"></ul>
     <script src="../javascript/app.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <!-- comment -->
-    <!-- <script type="text/javascript" src="javascript/vanilla-tilt.js"></script> -->
-    <!-- <script>
-      VanillaTilt.init(document.querySelector(".card"), {
-        max: 25,
-        speed: 400,
-      });
-    </script> -->
   </body>
 </html>

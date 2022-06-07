@@ -19,6 +19,8 @@ const hour = [
 const dataTable = document.getElementById("dataTable");
 const headerRow = document.createElement("tr");
 dataTable.appendChild(headerRow);
+const headerItem = document.createElement("th");
+  headerRow.appendChild(headerItem);
 for (let a = 0; a < hour.length; a++) {
   const headerItem = document.createElement("th");
   headerItem.textContent = hour[a];
@@ -72,7 +74,7 @@ Location.prototype.render = function () {
 
   for (let a = 0; a < this.cookiesSoldEachHour.length; a++) {
     let item = document.createElement("td");
-    item.textContent = `${this.cookiesSoldEachHour[a]} cookies`;
+    item.textContent = this.cookiesSoldEachHour[a];
     tableRow.append(item);
     this.totalDailyCookies = this.totalDailyCookies + this.customersEachHour[a];
   }
@@ -92,3 +94,12 @@ const myStores = [seattle, tokyo, dubai, paris, lima];
 for (let a = 0; a < myStores.length; a++) {
   myStores[a].render();
 }
+
+const total = document.createElement("th");
+  headerRow.appendChild(total);
+  total.textContent = 'Total'
+
+
+// Form eventLister code below
+
+const formEvents = document.getElementById('submit');
