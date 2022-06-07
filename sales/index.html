@@ -1,93 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="../css/styles.css" />
-		<title>Sales</title>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<div class="container">
-					<a class="logo_img" href="index.html"
-						><img class="logo_img" src="../img/logo.png" alt="Company logo"
-					/></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Sales</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <a class="logo_img" href="index.html"
+            ><img class="logo_img" src="../img/logo.png" alt="Company logo"
+          /></a>
 
-					<ul>
-						<li>
-							<a class="n_items" href="../index.html">
-								<span class="icon"><ion-icon name="home"></ion-icon></span>
-								<span class="text">Home</span>
-							</a>
-						</li>
-						<li>
-							<a class="n_items" href="index.html">
-								<span class="icon"><ion-icon name="analytics"></ion-icon></span>
-								<span class="text">Sales</span>
-							</a>
-						</li>
-						<li>
-							<a class="n_items" href="http://www.google.com" target="_blank">
-								<span class="icon"
-									><ion-icon name="chatbubbles"></ion-icon
-								></span>
-								<span class="text">Contact </span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-		<main>
-			<h4>Sales Report</h4>
-			<table>
-				<thead>
-					<tr>
-            Time
-          </tr>
-				</thead>
-				<tbody>
-          <!-- NOTE: Seattle -->
-					<tr id="Seattle">
-              time
-					</tr>
-          <!-- NOTE: Tokyo -->
-					<tr id="Tokyo">
-	
-					</tr>
-					<!-- NOTE: Dubai -->
-					<tr id="Dubai">
+          <ul>
+            <li>
+              <a class="n_items" href="../index.html">
+                <span class="icon"><ion-icon name="home"></ion-icon></span>
+                <span class="text">Home</span>
+              </a>
+            </li>
+            <li>
+              <a class="n_items" href="index.html">
+                <span class="icon"><ion-icon name="analytics"></ion-icon></span>
+                <span class="text">Sales</span>
+              </a>
+            </li>
+            <li>
+              <a class="n_items" href="http://www.google.com" target="_blank">
+                <span class="icon"
+                  ><ion-icon name="chatbubbles"></ion-icon
+                ></span>
+                <span class="text">Contact </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h4>Sales Report</h4>
+      <table id="dataTable"></table>
+    </main>
 
-					</tr>
-
-					<!-- NOTE: Paris -->
-					<tr id="Paris">
-	
-					</tr>
-					<!-- NOTE: Lima -->
-					<tr id="Lima">
-		
-					</tr>
-
-					<!-- NOTE: Totals -->
-					<tr id="totals">
-
-					</tr>
-				</tbody>
-			</table>
-		</main>
-
-		<ul id="seattle"></ul>
-		<script src="../javascript/app.js"></script>
-		<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-		<script type="text/javascript" src="javascript/vanilla-tilt.js"></script>
-		<script>
-			VanillaTilt.init(document.querySelector(".card"), {
-				max: 25,
-				speed: 400,
-			});
-		</script>
-	</body>
+    <ul id="seattle"></ul>
+    <script src="../javascript/app.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- comment -->
+    <!-- <script type="text/javascript" src="javascript/vanilla-tilt.js"></script> -->
+    <!-- <script>
+      VanillaTilt.init(document.querySelector(".card"), {
+        max: 25,
+        speed: 400,
+      });
+    </script> -->
+  </body>
 </html>

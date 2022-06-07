@@ -1,382 +1,380 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
 html {
-    height: 100%;
+  height: 100%;
 }
 
 :root {
-    --dark: #9A482F;
-    --primary: #B3773E;
-    --light: #ce9c6b;
-    --clr: #222327
+  --dark: #9a482f;
+  --primary: #b3773e;
+  --light: #ce9c6b;
+  --clr: #222327;
 }
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    background-image: url(../img/test-bg4c.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  background-image: url(../img/test-bg4c.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /* NOTE: Nav bar css starts here*/
 
 .logo_img {
-    width: 100px;
-    border-radius: 50%;
-    margin-right: auto;
+  width: 100px;
+  border-radius: 50%;
+  margin-right: auto;
 }
 
 .container {
-    padding: 4px 4px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;  
-    background-color: var(--dark);
-    border-radius: 0 0 10px 10px;
+  padding: 4px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--dark);
+  border-radius: 0 0 10px 10px;
 }
 
 .n_items {
-    color: var(--light);
-    text-decoration: none;
+  color: var(--light);
+  text-decoration: none;
 }
 
 .container ul {
-    display: flex;
+  display: flex;
 }
 
 .container ul li {
-    position: relative;
-    padding-right: 100px;
-    list-style: none;
-    width: 70px;
-    height: 70px;
-    z-index: 1;
+  position: relative;
+  padding-right: 100px;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
 }
 
 .container ul li a {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    font-weight: 500;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
 }
 
 .container ul li a .icon {
-    position: relative;
-    display: block;
-    line-height: 75px;
-    font-size: 2.5em;
-    text-align: center;
-    transition: 0.5s;
-    color: var(--clr);
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 2.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: var(--clr);
 }
 
 .container ul li:hover a .icon {
-    transform: translateY(-20px);
+  transform: translateY(-20px);
 }
 
 /* This resets the position of text which was located below the nav */
 
 .container ul li a .text {
-    position: absolute;
-    letter-spacing: 0.05em;
-    transform: translateY(20px);
-    transition: 0.5s;
-    opacity: 0;
+  position: absolute;
+  letter-spacing: 0.05em;
+  transform: translateY(20px);
+  transition: 0.5s;
+  opacity: 0;
 }
 
 .container ul li:hover a .text {
-    transform: translateY(10px);
-    opacity: 1;
+  transform: translateY(10px);
+  opacity: 1;
 }
 /* Nav bar css ends here */
 
 /* NOTE Footer css begins here */
 
 footer {
-    position: relative;
-    margin-top: auto;
-    width: 100%;
-    background-image: linear-gradient(#3586ff 15%,#9A482F);
-    min-height: 50px;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  position: relative;
+  margin-top: auto;
+  width: 100%;
+  background-image: linear-gradient(#3586ff 15%, #9a482f);
+  min-height: 50px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 footer .s-media-icons {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    flex-wrap: wrap;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
 }
 
 footer li {
-    list-style: none;
+  list-style: none;
 }
 
 footer .s-media-icons li a {
-    font-size: 1.5em;
-    color: #fff;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
+  font-size: 1.5em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
 }
 
 footer a:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .wave {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background:url(../img/wave.png);
-    background-size: 1000px 100px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: url(../img/wave.png);
+  background-size: 1000px 100px;
 }
 
 #wave1 {
-    z-index: 1000;
-    opacity: 1;
-    bottom: 0;
-    animation: animateWave 4s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWave 4s linear infinite;
 }
 #wave2 {
-    z-index: 999;
-    opacity: 0.5;
-    bottom: 10px;
-    animation: animateWave-2 2s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWave-2 2s linear infinite;
 }
 
 #wave3 {
-    z-index: 998;
-    opacity: 0.75;
-    bottom: 15px;
-    animation: animateWave-3 3s linear infinite;
+  z-index: 998;
+  opacity: 0.75;
+  bottom: 15px;
+  animation: animateWave-3 3s linear infinite;
 }
 
 #wave4 {
-    z-index: 996;
-    opacity: 0.25;
-    bottom: 20px;
-    animation: animateWave-4 3.5s linear infinite;
+  z-index: 996;
+  opacity: 0.25;
+  bottom: 20px;
+  animation: animateWave-4 3.5s linear infinite;
 }
 
 .waveFish {
-    background: url(../img/fish.png);
-    position: absolute;
-    top: -40px;
-    left: 0;
-    width: 100%;
-    background-repeat: no-repeat;
-    height: 40px;
-    background-size: 180px 50px;
+  background: url(../img/fish.png);
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  height: 40px;
+  background-size: 180px 50px;
 }
 
 #wave5 {
-    z-index: 997.5;
-    opacity: 0.75;
-    bottom: 0;
-    animation: animateFish 4s linear infinite;
-    animation-name: 20s;
+  z-index: 997.5;
+  opacity: 0.75;
+  bottom: 0;
+  animation: animateFish 4s linear infinite;
+  animation-name: 20s;
 }
 
 @keyframes animateFish {
-0%{
+  0% {
     background-position-x: -100px;
-} 80% {
+  }
+  80% {
     background-position-x: 200px;
-} 100% {
+  }
+  100% {
     background-position-x: 1500px;
+  }
 }
-}
-
 
 @keyframes animateWave {
-    0%{
-        background-position-x: 1000px;
-    }
-    100% {
-        background-position-x: 0px;
-    }
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-position-x: 0px;
+  }
 }
 
 @keyframes animateWave-2 {
-    0% {
-        background-position-x: 0px;
-    }
-    100% {
-        background-position-x: 1000px;
-    }
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
 }
 
 @keyframes animateWave-3 {
-    0% {
-        background-position-x: 0px;
-    }
-    100% {
-        background-position-x: 1000px;
-    }
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
 }
 @keyframes animateWave-4 {
-    0% {
-        background-position-x: 0px;
-    }
-    100% {
-        background-position-x: 1800px;
-    }
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 1800px;
+  }
 }
 
 /* footer css ends here*/
 /* NOTE: main css starts here */
 
 main {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 200px;
-    margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 200px;
+  margin-top: 40px;
 }
 
 main::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#f00, #f0f);
-    clip-path: circle(30% at left 80%);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#f00, #f0f);
+  clip-path: circle(30% at left 80%);
 }
 
 main::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#2196f3, #e91e63);
-    clip-path: circle(20% at right 1%);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#2196f3, #e91e63);
+  clip-path: circle(20% at right 1%);
 }
 
 .card-container {
-    position: relative;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    max-width: 1200px;
-    flex-wrap: wrap;
-    z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
 }
 
 .card {
-    position: relative;
-    width: 280px;
-    height: 400px;
-    margin: 30px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
 }
 
 .card-content {
-    padding: 20px;
-    text-align: center;
-    transform: translateY(50px);
-    transition: 0.5s;
-    opacity: 0;
+  padding: 20px;
+  text-align: center;
+  transform: translateY(50px);
+  transition: 0.5s;
+  opacity: 0;
 }
-
 
 .card:hover .card-content {
-    transform: translateY(0px);
-    opacity: 1;
+  transform: translateY(0px);
+  opacity: 1;
 }
 
-
 .card-content h2 {
-    font-size: 1.8em;
-    color: #fff;
+  font-size: 1.8em;
+  color: #fff;
 }
 
 .card-container p {
-    color: #fff;
-    font-weight: 400;
+  color: #fff;
+  font-weight: 400;
 }
 
 .card-content a {
-    position: relative;
-    display: inline-block;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    padding: 8px 20px;
-    margin-top: 15px;
-    background: #fff;
-    color: #000;
-    border-radius: 20px;
-    text-decoration: none;
-
-} 
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 8px 20px;
+  margin-top: 15px;
+  background: #fff;
+  color: #000;
+  border-radius: 20px;
+  text-decoration: none;
+}
 
 /* Main css ends here */
 /* NOTE: sales/index css begins here */
 
 h4 {
-    position: relative;
-    color: #fff;
-    text-align: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
 }
 
 main {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 table {
-    position: relative;
-    margin : 200px 90px 0px 0px;
-    padding: 0;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  position: relative;
+  margin: 200px 90px 0px 0px;
+  padding: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-td {
-    border: 2px solid white;
-    position: relative;
-    width: 28px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
-    border-left: 1px solid rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
-    
+td,
+th {
+  border: 2px solid white;
+  position: relative;
+  min-width: 67px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
 }
