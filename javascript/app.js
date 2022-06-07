@@ -83,6 +83,7 @@ Location.prototype.render = function () {
   tableRow.append(total);
 };
 
+
 const seattle = new Location("Seattle", [23, 65], 6.3);
 const tokyo = new Location("Tokyo", [3, 24], 1.2);
 const dubai = new Location("Dubai", [11, 38], 3.7);
@@ -102,4 +103,15 @@ const total = document.createElement("th");
 
 // Form eventLister code below
 
-const formEvents = document.getElementById('submit');
+const formEvents = document.getElementById('formEvents');
+formEvents.addEventListener('submit', function(event) {
+  event.preventDefault();
+  const city = event.target.city.value;
+  const minMum = event.target.minmax.value;
+  const maxMum = event.target.minmax2.value;
+  const avgC_r = event.target.avgCon.value;
+
+const newCity = new Location(city, [minMum, maxMum], avgC_r);
+
+newCity.render();
+})
